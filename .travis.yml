@@ -15,7 +15,7 @@ script:
   - yarn lint
   - yarn build
   - mv build/index.html build/404.html
-deploy:
+deploy
   provider: pages
   skip_cleanup: true
   github_token: $github_token
