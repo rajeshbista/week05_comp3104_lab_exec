@@ -1,4 +1,4 @@
-`
+
 language: node_js
 node_js:
   - "stable"
@@ -13,8 +13,8 @@ cache:
 install:
   - npm install -g yarn
 script:
-  - yarn lint
-  - yarn build
+  # - yarn lint
+  # - yarn build
   - mv build/index.html build/404.html
 deploy
   provider: pages
@@ -23,4 +23,3 @@ deploy
   local_dir: build
   on:
     branch: master
-`
